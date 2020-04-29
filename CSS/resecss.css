@@ -28,11 +28,9 @@ a{
     flex-wrap: wrap;
     box-sizing: border-box;
     background-color: rgb(36, 36, 36);
-    /* filter: blur(2px);  */
     color: rgb(255, 253, 249);
     height: 80px;
-    /* opacity: 0.5; */
-    font-size: 35px;
+    font-size: 2vw;
     margin-top: 0;
     position: sticky;
     z-index: 1;
@@ -41,13 +39,12 @@ a{
 
 .headerText{
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgb(122, 74, 255)), color-stop(0.15, rgb(255, 95, 255)), color-stop(0.3, rgb(126, 126, 255)), color-stop(0.45, rgb(106, 255, 255)), color-stop(0.6, rgb(218, 123, 255)),color-stop(0.75, rgb(197, 111, 255)), color-stop(0.9, rgb(255, 140, 221)), color-stop(1, rgb(255, 123, 123)) );
-    /* background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) ); */
     color:transparent;
     background-clip: text;
     display: flex;
     width: 450px;
     padding-left: 45px;
-    font-size: 50px;
+    padding-right: 70px;
     align-items: center;
 }
 
@@ -59,7 +56,6 @@ a{
 
 .menu{
     border: 1px linear-gradient( linear, left top, right top, color-stop(0, rgb(122, 74, 255)), color-stop(0.15, rgb(255, 95, 255)), color-stop(0.3, rgb(126, 126, 255)), color-stop(0.45, rgb(106, 255, 255)), color-stop(0.6, rgb(218, 123, 255)),color-stop(0.75, rgb(197, 111, 255)), color-stop(0.9, rgb(255, 140, 221)), color-stop(1, rgb(255, 123, 123)) );
-    font-size: 35px;
     color: rgb(206, 206, 206);
     padding-top: 17px;
     text-align: center;
@@ -80,18 +76,31 @@ a{
 .imageContainer{
     display: flex;
     width: 100%;
-    text-align: right;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
+.imageContainer .textImage{
+    justify-content: center;
+    align-items: center;
+}
+
 .textImage{
+    width: 600px;
+    height: 100px;
     display: flex;
-    border: 1px solid red;
+    color: aliceblue;
+    font-size: 40px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     position: absolute;
     z-index: 0;
-    top: 200px;
     left: 50%;
-    width: 300px;
+    top: 50%;
+    margin-top: -300px;
+    margin-left: -270px;
 }
 
 .topImage{
@@ -106,7 +115,7 @@ a{
 
 
 .middle{
-    overflow: auto;
+    /* overflow: auto; */
     padding-bottom: 100px;
     display: flex;
     flex-direction: row;
