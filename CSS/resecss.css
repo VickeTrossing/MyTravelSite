@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 html, body{
@@ -12,6 +13,10 @@ html, body{
 .container{
     min-height: 100vh;
     position: relative;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -40,7 +45,7 @@ html, body{
     color:transparent;
     background-clip: text;
     display: flex;
-    width: 400px;
+    width: 450px;
     padding-left: 45px;
     font-size: 50px;
     align-items: center;
@@ -55,8 +60,8 @@ html, body{
 .menu{
     border: 1px linear-gradient( linear, left top, right top, color-stop(0, rgb(122, 74, 255)), color-stop(0.15, rgb(255, 95, 255)), color-stop(0.3, rgb(126, 126, 255)), color-stop(0.45, rgb(106, 255, 255)), color-stop(0.6, rgb(218, 123, 255)),color-stop(0.75, rgb(197, 111, 255)), color-stop(0.9, rgb(255, 140, 221)), color-stop(1, rgb(255, 123, 123)) );
     font-size: 35px;
-    color: rgb(146, 137, 137);
-    padding-top: 13px;
+    color: rgb(206, 206, 206);
+    padding-top: 17px;
     text-align: center;
     font-weight: 300;
     box-sizing: border-box;
