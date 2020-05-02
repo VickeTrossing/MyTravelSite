@@ -58,6 +58,7 @@ a{
     align-items: center;
     justify-content: end;
     display: flex; 
+    flex-direction: row;
     /* border: 1px solid red; */
     width: 100%;
     height: 100%;
@@ -74,51 +75,34 @@ a{
     background-clip: text;
     border: none;
     padding: 15px 32px;
-    /* padding-right: 100px; */
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-}
+    }
 
 .dropdown-content{
-    display: none;
+    font-size: 40px;
+    display: inline-block;
     position: absolute;
     padding-top: 100px;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(36, 36, 36);
     color: aliceblue;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
-}
-
-.dropdown:hover .dropdown-content{
     display: block;
+    right: 0;
+    left: auto;
+    padding-top: 13px;
+    border-bottom: black;
 }
-
-
-
-
-     /* .menu{
-    border: 1px solid red;
-    font-size: 2vw;
-    color: rgb(206, 206, 206);
-    position: relative;
-    text-align: center;
-    font-weight: 300;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 300px;
-    height: 100%;
-    }  */
-
-.menu:hover{background: rgb(20, 20, 20);}
-
 
 
 
 
 /*----------------------------BODY CONTENT--------------------------------*/
+
+
 
 .imageContainer{
     display: flex;
@@ -132,6 +116,7 @@ a{
 .imageContainer .textImage{
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 .textImage{
@@ -149,6 +134,8 @@ a{
     margin-top: -300px;
     margin-left: -270px;
 }
+
+
 
 .topImage{
     width: 100%;
