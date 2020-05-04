@@ -32,7 +32,8 @@ a{
     background-color: rgb(36, 36, 36);
     color: rgb(255, 253, 249);
     height: 80px;
-    font-size: 2vw;
+    /* font-size: 2vw; */
+    font-size: calc(10px + 2vw);
     margin-top: 0;
     position: sticky;
     z-index: 1;
@@ -69,9 +70,8 @@ a{
 
 
 .dropdown{
-    border: 9px solid red;
     position: relative;
-    display: inline-block;
+    display: block;
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgb(122, 74, 255)), color-stop(0.15, rgb(255, 95, 255)), color-stop(0.3, rgb(126, 126, 255)), color-stop(0.45, rgb(106, 255, 255)), color-stop(0.6, rgb(218, 123, 255)),color-stop(0.75, rgb(197, 111, 255)), color-stop(0.9, rgb(255, 140, 221)), color-stop(1, rgb(255, 123, 123)) );
     color: transparent;
     background-clip: text;
@@ -84,22 +84,23 @@ a{
 
 
 .dropdown-content{
-    z-index: 1;
-    font-size: 40px;
-    display: inline-block;
+    font-size: 35px;
+    display: none;
     position: absolute;
     background-color: rgb(36, 36, 36);
     min-width: 160px;
     width: 300px;
-    padding: 12px 16px;
-    z-index: 1;
-    display: block;
     right: 0;
     left: auto;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     padding-top: 13px;
     border-bottom: 4px  solid rgb(186, 103, 255);
 }
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
 
 .dropdown-content a{
     color: aliceblue;
@@ -107,6 +108,17 @@ a{
 
 .dropdown-content .menu:hover{
     background: rgb(59, 59, 59);
+    transition: all 1s ease;
+}
+
+.dropdown:hover .dropdown-content{
+    transition: all 1s ease;
+}
+
+
+.menu{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
@@ -136,10 +148,11 @@ a{
     left: center;
 }
 
+
 .textImage{
     width: 35vw;
     min-width: 500px;
-    height: 5vw;
+    height: 6vw;
     min-height: 70px;
     display: flex;
     color: aliceblue;
@@ -148,8 +161,8 @@ a{
     background-color: rgba(0,0,0, 0.4); 
     z-index: 0;
     margin-top: -200px;
-    /* margin-left: 400px; */
-    /* margin-right: 400px; */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -157,6 +170,7 @@ a{
 .topImage{
     width: 100%;
 }
+
 
 .topImage img{
     width: 100%;
