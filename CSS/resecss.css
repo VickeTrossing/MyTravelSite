@@ -179,14 +179,12 @@ a{
     display: grid;
     justify-self: center;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-self: center;
     grid-gap: 0.5em;
-    
 }
 
 
-.box{
-    /* border: 1px solid red; */
+
+.box, .flight .box{
     background-color: rgb(218, 218, 218); 
     text-align: center;
     box-sizing: border-box;
@@ -194,7 +192,7 @@ a{
 }
 
 
-.box1{
+.box1, .flight .fbox1{
     text-align: right;
     grid-column: 1/4;
     background-color: rgb(54, 54, 54);
@@ -206,6 +204,7 @@ a{
     padding-top: 5px;
 }
 
+
 .box2, .box6{
     grid-column: 1/2;
     max-height: 350px;
@@ -214,11 +213,19 @@ a{
 .box3, .box7{
     grid-column: 2/4;
     max-height: 350px;
+    font-size: 1.3vw;
+    text-align: left;
+    line-height: 2vw;
+    padding: 20px;
 }
 
 .box4, .box8{
     grid-column: 1/3;
     max-height: 350px;
+    font-size: 1.3vw;
+    text-align: left;
+    line-height: 1.8vw;
+    padding: 20px;
 }
 
 .box5, .box9{
@@ -232,13 +239,14 @@ a{
     object-fit: cover;
 }
 
-
-/* .box5 img{
-    max-width:100%;
-    max-height:100%;
-} */
+.box a{
+    color: black;
+}
 
 
+.flight{
+    padding-top: 100px;
+}
 
 
 
@@ -246,7 +254,6 @@ a{
 
 
 .footer{
-    border: 1px solid red;
     background: #303036;
     color: #d3d3d3;
     width: 100%;
@@ -257,9 +264,8 @@ a{
 
 .footer .footer-content{
     background: #303036;
-    width: 100%;
-    border: 1px solid red;
-    height: 300px;
+    width: 100%;;
+    height: 15vw;
     display: flex;
 }
 
@@ -267,7 +273,6 @@ a{
     flex: 1;
     width: 100%;
     padding: 25 px;
-    border: 1px solid red;
     font-weight: 600;
 }
 
@@ -281,5 +286,18 @@ a{
     left: 0px;
     padding-top: 20px;
 }
+
+.logo-text, .contact-text{
+    font-size: 2vw;
+}
+
+.find-us, .contact{
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 100px;
+    font-size: 0.5vw;
+}
+
+
 
 .footer a{color: #d3d3d3;}

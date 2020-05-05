@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d310d4da21.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/png" href="bilder/favicon.png">
-    <!-- <script src="jQuery.js" defer></script> -->
+    <script src="jQuery.js" defer></script>
 
 
     <!-- jQuery library -->
@@ -30,7 +30,7 @@
                     <div class="dropdown-content" id="dropdown-content">
                         <a href="#top"><div class="menu menu1">Start</div></a>
                         <a href="#todo"><div class="menu menu2">What to do</div></a>
-                        <a href=""><div class="menu menu3">Flights</div></a>
+                        <a href="#flight"><div class="menu menu3">Flights</div></a>
                         <a href="#bottom"><div class="menu menu4">Contact</div></a>
                     </div>
                 </div>
@@ -52,26 +52,62 @@
             <div class="grid-middle" id="todo">
                     <div class="box box1">What to do?</div>
                     <div class="box box2"><img src="bilder/new-zealand4.jpg"></div>
-                    <div class="box box3">New Zealand has something for everyone. Besides the breathtaking natues that NZ has to offer you can skydive, visit <a href="#hobbiton">Hobbiton</a></div>
-                    <div class="box box4">4</div>
+                    <div class="box box3"><p>New Zealand has something for everyone. Besides the breathtaking nature that New Zealand
+                        has to offer you can skydive, go bungiejump, visit <a href="#hobbiton"><strong>Hobbiton</strong></a> or go to
+                        one of many big cities. New Zealand offers a wide selection of different natures, from tall, 
+                         snow covered mountains to deep valleys, beautiful beaches to <a href="#sounds"><strong>fjords/sounds</strong></a> and rainforests.
+                        No words or pictures could ever do this country justice, so why don't you <a href="#flight"><strong>book a flight</strong></a>
+                        and see it for yourself?</p>
+                        </div>
+                    <div class="box box4">Cathedral Cove is located at Hahei, just 10minutes drive from the famous Hot Water Beach. 
+
+                        Foot access to Cathedral Cove starts at the top of Grange Road.  Parking is at the Visitor Car Park on Pa Road (turn right just after entering Hahei). During the summer months a shuttle service runs from the visitor car park on Pa Road to the start of the Cathedral Cove track. Alternatively you can walk from the car park around the beach to the start of the track which will take an extra 20mins.
+                        
+                        It is here that you can also access Gemstone Bay and Mares Leg.
+                        
+                        Cathedral Cove Marine Reserve, Te Whanganui- A-Hei, covers 9 square kilometres and is New Zealand’s sixth marine reserve. It is administered by the Department of Conservation.</div>
                     <div class="box box5"><img src="bilder/new-zealand6.jpg"></div>
                     <div class="box box6" id="hobbiton"><img src="bilder/new-zealand5.jpg"></div>
-                    <div class="box box7">7</div>
-                    <div class="box box8">8</div>
-                    <div class="box box9"><img src="bilder/new-zealand7.jpg"></div>
+                    <div class="box box7">The Hobbiton Movie Set was a significant location used for The Lord of the Rings film trilogy and The Hobbit film series. It is situated on a family run farm about 8 kilometres (5.0 mi) west of Hinuera and 10 kilometres (6.2 mi) southwest of Matamata, in Waikato, New Zealand, and is now a Tolkien tourism destination, offering a guided tour of the set.
+                    </div>
+                    <div class="box box8">Described by Rudyard Kipling as the 'eighth wonder of the world', Milford Sound was carved by glaciers during the ice ages. Breathtaking in any weather, the fiord's cliffs rise vertically from the dark waters, mountain peaks scrape the sky and waterfalls cascade downwards from as high as 1000 metres. When it rains in Milford Sound, and it often does, those waterfalls multiply with magnificent effect. 
+
+                        Boat cruises – during the day or overnight – are an excellent way to experience the Sound. Adventurous types might also like to head out sea kayaking, diving or flightseeing. To learn more about the local marine life, visit the underwater observatory at Harrison Cove and marvel at the black coral, 11-legged sea stars and delicate anemones.</div>
+                    <div class="box box9" id="sounds"><img src="bilder/new-zealand7.jpg"></div>
+            </div>
+            <div class="flight" id="flight">
+                <div class="box fbox1">Flights</div>
+                <div class="box fbox2">2</div>
             </div>
         </div>
 
 
         <div class="footer">
             <div class="footer-content">
-                <div class="footer-section about"></div>
+                <div class="footer-section find-us">
+                    <h1 class="logo-text">Find us on</h1><br/>
+                    <i class="fab fa-instagram fa-2x"><a href="https://www.instagram.com/purenewzealand/" target="_blank">&nbsp;Instagram</a></i><br/><br/><br/>
+                    <i class="fab fa-twitter fa-2x"><a href="https://twitter.com/purenewzealand" target="_blank">&nbsp;Twitter</a></i><br/><br/><br/>
+                    <i class="fab fa-youtube fa-2x"><a href="https://www.youtube.com/purenewzealand">&nbsp;YouTube</a></i><br/><br/><br/>
+                    <i class="fab fa-facebook-square fa-2x"><a href="https://www.facebook.com/purenewzealand/">&nbsp;Facebook</a></i>
+
+                </div>
+
                 <div class="footer-section links"></div>
-                <div class="footer-section contact"></div>
+
+                <div class="footer-section contact">
+                    <h1 class="contact-text">Contact us</h1>
+                    <br/>
+                    <form action="MinReseSite.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input"placeholder="Your email address"><br/><br/>
+                        <textarea name="message" cols="50" rows="5" class="text-input contact-input" placeholder="Write your message here"></textarea><br/><br/>
+                        <button type="submit" class="btn btn-big">Send</button>
+                    </form>
+                </div>
             </div>
 
             <div class="footer-bottom" id="bottom">
-                <p>Made by Vicke</p>
+                <p>Made by <a href="https://github.com/VickeTrossing" target="_blank">Vicke&nbsp;<i class="fab fa-github-square fa-2x"></i></a></p>
             </div>
         </div>
     </div>
